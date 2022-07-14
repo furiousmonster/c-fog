@@ -29,34 +29,9 @@ void testLambda02() {
 }
 
 
-template<typename T>
-void printTwoDVector(std::vector<std::vector<T>>& vs) {
-  for (const auto& v : vs) { 
-    for (const T& i : v) {
-      std::cout<<i<<' ';
-    }
-    std::cout<<std::endl;
-  }
- 
-};
-
-
-void testLambda03() {
-  std::vector<std::vector<int>> arr = {
-    {4, 5, 3},
-    {6, 2, 7},
-    {8, 9, 1}
-  };
-  std::sort(arr.begin(), arr.end(), [](std::vector<int> a, std::vector<int> b){return a[0] >= b[0];});
-  printTwoDVector(arr);
-
-}
-
-
 int main() {
-  // testLambda01();
-  // testLambda02();
-  testLambda03();
+  testLambda01();
+  testLambda02();
 
   return 0;
 }

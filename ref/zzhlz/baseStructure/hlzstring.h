@@ -3,21 +3,9 @@
 
 #include <vector>
 #include <string>
-#include <iostream>
 
 using namespace std;
 
-
-template<typename T>
-void printTwoDVector(vector<vector<T>>& vs) {
-  for (const auto& v : vs) { 
-    for (const T& i : v) {
-      cout<<i<<' ';
-    }
-    cout<<endl;
-  }
- 
-};
 
 
 /**
